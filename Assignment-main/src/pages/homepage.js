@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ListItem from "../components/list";
-import { FaEllipsisH } from 'react-icons/fa';
 import Frame from '../assets/Frame.svg';
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
@@ -101,7 +100,6 @@ const Homepage = () =>{
                 </div>
                 <div className="cover_art_container">
                     <img src={`https://cms.samespace.com/assets/${selectedSong.cover?.id}`} alt="name" className="cover_art"/>
-                    <div className='bg-[white] hover:bg-[#ffffff30] rounded-[50%] h-10 w-10 flex justify-center items-center mt-[-7px]'><FaEllipsisH className='text-white text-[18px]'/></div>
                 </div>
                 <AudioPlayer
                     autoPlay
